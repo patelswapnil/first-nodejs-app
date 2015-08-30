@@ -1,0 +1,72 @@
+<!doctype html>
+<html lnag="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nodejs APP</title>
+	<style type="text/css">
+		body{
+        	width:80%;
+        	margin-left:auto;
+        	margin-right:auto;
+    	}
+		table{
+			width: 80%;
+			border: 2px solid #006699;
+			padding: 10px;
+		}
+		td{
+			width: 60%;
+			height: 25px;
+			text-align: left;			
+		}
+		th{
+			width: 40%;
+			height: 25px;
+			background-color: #FCEBB6;
+			font-weight: bold;
+		}	
+		.buttonStyle{		 	
+			background: #4E9CAF;
+			padding: 10px;
+			text-align: center;
+			border-radius: 5px;
+			color: white;
+			font-weight: bold;
+		}		
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Product Details</h1>
+		<table>
+			<tr>
+				<td colspan="2">					
+					<div style="float:left">
+						<a class="buttonStyle" href="/">Home</a>
+					</div>
+					<div style="float:right">
+						<a class="buttonStyle" href="/products">List</a>
+					</div>		
+					<p>&nbsp;</p>			
+				</td>	
+			</tr>	
+			<tr>
+				<th>ID</th>
+				<td><%= product._id %></td>
+			</tr>
+			<tr>
+				<th>Name</th>
+				<td><%= product.name %></td>
+			</tr>
+			<tr>
+				<th>Available Quantity</th>
+				<td><%= product.available_quantity %></td>
+			</tr>
+			<tr>
+				<th>Price</th>
+				<td><%= product.price %></td>
+			</tr>
+		</table>					
+	</div>
+</body>
+</html>

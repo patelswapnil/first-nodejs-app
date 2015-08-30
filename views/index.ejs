@@ -3,11 +3,30 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Nodejs APP</title>
-	
+	<style type="text/css">
+		body{
+        	width:80%;
+        	margin-left:auto;
+        	margin-right:auto;
+    	}
+    	.buttonStyle{		 	
+			background: #4E9CAF;
+			padding: 10px;
+			text-align: center;
+			border-radius: 5px;
+			color: white;
+			font-weight: bold;
+		}
+	</style>
 </head>
 <body>
 	<div class="container">
 		<h1><%= title %></h1>
+
+		<div style="width:80%;text-align:right">
+			<a class="buttonStyle" href='/allowed/toogle'>Toggle Allowed (<%= allowed %>)</a>
+			<a class="buttonStyle" href='/products'>Second Challenge</a>
+		</div>
 
 		<ul>
 			<% for (var i = 0; i < items.length; i++) { %>

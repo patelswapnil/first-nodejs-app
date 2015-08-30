@@ -1,0 +1,27 @@
+
+		body{
+        	width:80%;
+        	margin-left:auto;
+        	margin-right:auto;
+    	}
+		table{
+			width: 80%;
+		}
+		tr:nth-child(even){
+			background-color: #FCEBB6;
+		}
+		td{
+			width: 20%;
+			text-align: center;
+		}
+		th{
+			font-weight: bold;
+		}
+		.buttonStyle{		 	
+			background: #4E9CAF;
+			padding: 10px;
+			text-align: center;
+			border-radius: 5px;
+			color: white;
+			font-weight: bold;
+		}		

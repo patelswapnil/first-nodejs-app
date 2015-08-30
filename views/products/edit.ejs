@@ -1,0 +1,73 @@
+
+<!doctype html>
+<html lnag="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nodejs APP</title>
+	<style type="text/css">
+		body{
+        	width:80%;
+        	margin-left:auto;
+        	margin-right:auto;
+    	}
+		table{
+			width: 80%;
+		}
+		td{
+			width: 60%;
+			text-align: left;
+		}
+		th{
+			width: 40%;
+			background-color: #FCEBB6;
+			font-weight: bold;
+		}
+		.buttonStyle{		 	
+			background: #4E9CAF;
+			padding: 10px;
+			text-align: center;
+			border-radius: 5px;
+			color: white;
+			font-weight: bold;
+		}		
+	</style>	
+</head>
+<body>
+	<div class="container">
+		<h1>Edit Product</h1>
+
+		<form action="/products/<%= product._id %>" method="post">
+			<table>		
+				<tr>
+					<td colspan="2">					
+						<div style="float:left">
+							<a class="buttonStyle" href="/">Home</a>
+						</div>
+						<div style="float:right">
+							<a class="buttonStyle" href="/products">List</a>
+						</div>		
+						<p>&nbsp;</p>			
+					</td>	
+				</tr>		
+				<tr>
+					<th><lable>Name:</lable></th>
+					<td><input type="text" name="productName" value="<%= product.name %>"></td>
+				</tr>
+				<tr>
+					<th><lable>Availabe Quantity:</lable></th>
+					<td><input type="text" name="quantity" value="<%= product.available_quantity %>"></td>
+				</tr>
+				<tr>
+					<th><lable>Price:</lable></th>
+					<td><input type="text" name="price" value="<%= product.price %>"></td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align:center">
+						<input class="buttonStyle" type="submit" value="Modify">
+					</td>
+				</tr>								
+			</table>			
+		</form>					
+	</div>
+</body>
+</html>
