@@ -1,0 +1,27 @@
+<!doctype html>
+<html lnag="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nodejs APP</title>
+	
+</head>
+<body>
+	<div class="container">
+		<h1><%= title %></h1>
+
+		<ul>
+			<% for (var i = 0; i < items.length; i++) { %>
+				<li><%= items[i].desc %></li>
+			<% } %>
+		</ul>
+
+		<form action="/add" method="post">
+			<lable>
+				<strong>Please enter value and hit Submit!</strong>
+				<input type="text" name="newItem">
+				<input type="submit">
+			</lable>
+		</form>
+	</div>
+</body>
+</html>
